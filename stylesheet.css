@@ -1,3 +1,11 @@
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
 body {
     width: 100%;
       height: 100%;
@@ -88,37 +96,51 @@ body {
     margin: 0;
     object-fit: cover;
     /*make the background image blur*/
-    filter: blur(2px);
+    filter: blur(3px);
     padding: 20px; 
     box-sizing: border-box;
 }
-.image-container h1 {
-    position: absolute;
+/*.image-container h1 {
+   position: absolute;
     top: 50%;
-    left: 50%;
+    left:  50%;
     transform: translate(-50%, -50%);
-    z-index: 1; /* Ensure the h1 stays above the image */
-    color:#F5F5DC; /* Adjust text color as needed */
-    text-align: center; /* Center the text horizontally */
-    font-size: 100px; /* Adjust font size as needed */
+    z-index: 1; 
+    Ensures the h1 stays above the image 
+    color:#F5F5DC; 
+    text-align: center;
+    font-size: 100px; 
     font-family:rigid-square, sans-serif;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}*/
+.image-container h1 {
+    position: absolute;
+    top: 30%;
+    left: 70px; 
+    transform: translateY(-50%);
+    z-index: 1;
+    /* Ensures the h1 stays above the image */
+    color: whitesmoke;
+    text-align: center;
+    font-size: 105px;
+    font-family: 'rigid-square', sans-serif;
+    font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /* Additional styling properties as needed */
 }
+
 .image-container h3 {
     position: absolute;
-    top: 69%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; /* Ensure the h1 stays above the image */
-    color: whitesmoke; /* Adjust text color as needed */
-    text-align: center; /* Center the text horizontally */
-    font-size: 40px; /* Adjust font size as needed */
+    top: 42%;
+    left: 70px; 
+    /*transform: translate(-50%, -50%);*/
+    z-index: 1; 
+    color: whitesmoke; 
+    text-align: center;
+    font-size: 42px; 
     font-family: "Handlee", cursive;
-
     font-weight: bold;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 h2{
@@ -126,24 +148,26 @@ h2{
     font-family: rigid-square, sans-serif;
     font-weight: bold;
     color: #5A463A;
-    font-size: 30px;
-    /* box wraps around only the text */
+    font-size: 40px;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 60px;
+    /* box wraps around only the text*/
     display: inline-block;
-    /* Adding a solid border around the text */
+    /* Adding a solid border around the text*/
     border: 2px solid #000;
     border-radius: 5px;
     padding: 10px 20px;
-    margin-left: 48%;
-    margin-right: 45%;
-    border-color: #d2b48c;
+    border-color: #8F9779;
+
 }
  /* Clickable button for the order now section */
 .button {
     position: absolute;
     /* Adjusting the top position */
-    top: 80%; 
+    top: 60%; 
     /* for the sides */
-    left: 50%; 
+    left: 150px; 
     /*centers the button both vertically and horizontally within the image container,*/
     transform: translate(-50%, -50%);
     padding: 10px 20px;
@@ -151,12 +175,32 @@ h2{
     color: white;
     text-decoration: none;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 27px;
 }
 .button:hover {
     background-color: #F5F5DC;
 }
+h4{
+    font-size: 40px;
+    text-align: center;
+    color: #5A463A;
+    font-weight: bold;
+    margin-left: 46%;
+    margin-right: 5%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-color: #8F9779;
+    font-size: rigid-square, sans-serif;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #5A463A;
 
+}
 /* Center images horizontally */
 .gallery {
     display: flex;
@@ -175,15 +219,15 @@ h2{
     width: 300px;
     height: auto; /
 }
-/* background color for page*/
+/* background color for page
 body{
     background-color:white; 
     margin: 0; 
     padding: 0
-}
+}*/
 /*Footer*/
 hr {
-    width: 70%;
+    width: 80%;
     background-color: #d2b48c;
     margin-top: 70px;
 }
@@ -199,13 +243,12 @@ footer {
 }
 
 footer > img {
-    height: 135px;   
+    height: 150px;   
     font-family: rigid-square, sans-serif;
     font-size: 45px;
     width: 150px;
     
 }
-
 footer>ul {
     margin: 0;
     display: inline-block;
@@ -233,4 +276,19 @@ footer>ul {
 footer li {
    list-style-type: none;
    
+}
+.text-bottom h5{
+font-size: 40px;
+color: #8F9779;
+margin-left: 42%;
+    margin-right: 2%;
+    font-weight: bold;
+    font-family: rigid-square, sans-serif;
+}
+.text-bottom p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+    margin-right: 40px;
 }
